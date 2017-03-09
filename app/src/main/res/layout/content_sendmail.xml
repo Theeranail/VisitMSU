@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/text_tomail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ถึง: Simple@gmail.com"
+            android:textColor="@color/colorhin"
+            android:textSize="@dimen/fonsizeM" />
+
+        <TextView
+            android:id="@+id/text_tomailname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SimpleName"
+            android:layout_marginLeft="26dp"
+            android:textColor="@color/colorhin"
+            android:textSize="@dimen/fonsizeM"
+            android:layout_below="@+id/text_tomail"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/edittext_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorhin"
+            android:hint=" ชื่อเรื่อง:"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/edittext_detailmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:hint=" รายละเอียด"
+            android:inputType="text|textMultiLine"
+            android:lines="3"
+            android:textColorHint="@color/colorhin" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ตกลง"
+            android:textColor="@color/White"
+            android:drawableLeft="@drawable/ic_send_black_24dp"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btn_sendmail" />
+
+    </RelativeLayout>
+
+</LinearLayout>
